@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <div id="countdown"></div>
+<script>
+const countdown = document.getElementById('countdown');
+const targetDate = new Date("2025-12-31").getTime();
+
+setInterval(() => {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+}, 1000);
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeggarIndex (BHIKX)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#buy">Buy BHIKX</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="hero">
+    <div class="hero-content">
+        <h1>Welcome to BeggarIndex (BHIKX)</h1>
+        <p>Fair crypto investments for everyone!</p>
+        <a href="#buy" class="btn">Buy Now</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About BHIKX</h2>
+    <p>BHIKX offers staking rewards, automated trading, and airdrops for holders.</p>
+</section>
+
+<section id="roadmap">
+    <h2>Roadmap</h2>
+    <p>Our future plans and milestones.</p>
+</section>
+
+<section id="buy">
+    <h2>Buy BHIKX</h2>
+    <p>Purchase using BNB or USDT!</p>
+    <button>Buy with BNB</button>
+    <button>Buy with USDT</button>
+</section>
+
+<footer>
+    <p>© 2025 BeggarIndex. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
