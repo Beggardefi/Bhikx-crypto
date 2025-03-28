@@ -1,111 +1,64 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeggarIndex (BHIKX) Presale</title>
+    <title>BHIKUX Website</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
-const countdown = document.getElementById('countdown');
-const targetDate = new Date("2025-5-31").getTime();
-
-setInterval(() => {
-    const now = new Date().getTime();
-    const distance = targetDate - now;
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-}, 1000);
 <body>
 
-<!-- Navigation -->
 <header>
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
         <a href="#presale">Presale</a>
-        <a href="#team">Team</a>
-        <a href="#faq">FAQs</a>
+        <a href="#story">Story</a>
+        <a href="#whitepaper">Whitepaper</a>
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<!-- Hero Section -->
-<section id="home">
-    <div class="hero-content">
-        <h1>BHIKX Presale is Live!</h1>
-        <p>Invest in the future of decentralized finance with BeggarIndex.</p>
-        <a href="#presale" class="btn">Buy BHIKX Now</a>
+<div class="container">
+
+    <div id="presale" class="section">
+        <h2>Presale</h2>
+        <img src="hero1.png" alt="Bhikux Hero" class="hero-image">
+        <div>
+            <p>Presale Details: Price, Progress, Countdown, and Calculator.</p>
+            <button id="connect-wallet">Connect Wallet</button>
+        </div>
     </div>
-</section>
 
-<!-- About Section -->
-<section id="about">
-    <h2>About BHIKX</h2>
-    <p>BeggarIndex (BHIKX) is a next-gen DeFi token offering guaranteed USDT airdrops, staking rewards, and access to automated trading bots for holders.</p>
-    <p>Total Supply: <b>100 Billion</b> | Decimals: <b>0</b></p>
-</section>
-
-<!-- Presale Section -->
-<section id="presale">
-    <h2>Presale Details</h2>
-    <p>Price: 1 BHIKX = $0.00025</p>
-    <p>Minimum Investment: 1000 BHIKX</p>
-    <p>Presale Bonus: <b>10% extra</b> for early buyers!</p>
-    <p>USDT Raised: <b>$25,000</b></p>
-    <div id="countdown"></div>
-    <button>Buy with BNB</button>
-    <button>Buy with USDT</button>
-</section>
-
-<!-- Team Section -->
-<section id="team">
-    <h2>Meet the Team</h2>
-    <div class="team-member">
-        <img src="images/team1.jpg" alt="Team Member">
-        <h3>John Doe</h3>
-        <p>CEO & Co-founder</p>
+    <div id="story" class="section">
+        <h2>Story</h2>
+        <img src="hero2.png" alt="Bhikux Hero" class="hero-image">
+        <div>
+            <div class="slide">Slide 1: About Bhikux</div>
+            <div class="slide">Slide 2: The Problem & Solution</div>
+            <div class="slide">Slide 3: Whitepaper with Download Link</div>
+            <div class="slide">Slide 4: Roadmap</div>
+            <div class="slide">Slide 5: Tokenomics</div>
+            <div class="slide">Slide 6: Join the Mission</div>
+            <button id="prev-slide">Previous</button>
+            <button id="next-slide">Next</button>
+        </div>
     </div>
-    <div class="team-member">
-        <img src="images/team2.jpg" alt="Team Member">
-        <h3>Jane Smith</h3>
-        <p>CTO & Blockchain Expert</p>
-    </div>
-</section>
 
-<!-- Testimonials -->
-<section id="testimonials">
-    <h2>What Our Investors Say</h2>
-    <blockquote>
-        "BHIKX has amazing potential. The staking rewards and autobot features are game-changers!"
-    </blockquote>
-    <blockquote>
-        "I invested early and already earned a 10% bonus. Best decision ever!"
-    </blockquote>
-</section>
+</div>
 
-<!-- FAQs -->
-<section id="faq">
-    <h2>Frequently Asked Questions</h2>
-    <details>
-        <summary>What is BHIKX?</summary>
-        <p>BHIKX is a DeFi token offering staking rewards, airdrops, and access to trading bots.</p>
-    </details>
-    <details>
-        <summary>How do I buy BHIKX?</summary>
-        <p>You can buy BHIKX using BNB or USDT during the presale.</p>
-    </details>
-</section>
-
-<!-- Footer -->
 <footer>
-    <p>© 2025 BeggarIndex. All Rights Reserved.</p>
+    <div class="footer-links">
+        <a href="https://twitter.com/BeggarIndex">Twitter</a>
+        <a href="https://t.me/BeggarIndex">Telegram</a>
+        <a href="https://www.instagram.com/beggarindex">Instagram</a>
+        <a href="https://discord.gg/f4GqXVcT">Discord</a>
+    </div>
+    <p>&copy; 2025 BHIKUX. All rights reserved.</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
